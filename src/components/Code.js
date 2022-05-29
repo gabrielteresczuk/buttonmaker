@@ -20,8 +20,21 @@ const Code = ({menu}) => {
 
     let texto = 
     `.button{
+    background-color:${menu.backgroundColor};
     font-size:${menu.fontSize}px;
     font-weight:${menu.fontWeight};
+    text-align:${menu.textAlign};
+    text-transform:${menu.textTransform};
+    color:${menu.color};
+    border-width:${menu.borderWidth}px;
+    border-style:${menu.borderStyle};
+    border-color:${menu.borderColor};
+    border-radius:${menu.borderRadius}px;
+    padding:${menu.padding}px;
+    height:${menu.height}px;
+    width:${menu.width}px;
+    boxshadow:${menu.boxShadowOffetX}px,${menu.boxShadowOffetY}px,
+    ${menu.boxShadowBlurRadius}px,${menu.boxShadowSpreadRadius}px,${menu.boxShadowColor};
     }`;
       
     return ( 
@@ -29,7 +42,7 @@ const Code = ({menu}) => {
             <div className='CodeContainer'>
                 <div className='CodeCopy'>
                     {copySuccess}
-                    <button onClick={copyToClipboard} >Copy</button> 
+                    <button onClick={copyToClipboard} className="CodeBtn">Copy</button> 
                 </div>
             
                 <div className='CodeTextContainer'>

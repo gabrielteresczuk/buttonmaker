@@ -1,21 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Menu.css';
 
 
 
-const Menu = ({handleChange,handleReset,menu}) => {
+const Menu = ({handleChange,handleReset,menu,handleRandom}) => {
 
 
     return ( 
         <div className='Menu'>
+            <div className='MenuCont'>
             <div className='MenuRow MenuTitle'>
-                Menu
-                <button onClick={handleReset}>Reset</button>
+                MENU
+                <div>
+                    <button onClick={handleRandom} className="MenuBtn">FUN!</button>
+                    <button onClick={handleReset} className="MenuBtn">RESET</button>
+                </div>
             </div>
             <hr/>
             <div className='MenuRow2'>
                 <label htmlFor='texto'>Texto:</label>
-                <input type="text" id='texto' name="texto" placeholder='texto' onChange={handleChange} value={menu.texto}/>
+                <input type="text" className='MenuInput' id='texto' name="texto" placeholder='texto' onChange={handleChange} value={menu.texto}/>
             </div>
             <hr/>
             <div className='MenuRow MenuTitle'>
@@ -47,7 +51,7 @@ const Menu = ({handleChange,handleReset,menu}) => {
             </div>
             <div className='MenuRow2'>
                 <label htmlFor='textAlign'>Align:</label>
-                <select name='textAlign' value={menu.textAlign} onChange={handleChange}>
+                <select className='MenuInput' name='textAlign' value={menu.textAlign} onChange={handleChange}>
                     <option>left</option>
                     <option>right</option>
                     <option>center</option>
@@ -55,7 +59,7 @@ const Menu = ({handleChange,handleReset,menu}) => {
             </div>
             <div className='MenuRow2'>
                 <label htmlFor='textTransform'>Trans:</label>
-                <select name='textTransform' value={menu.textTransform} onChange={handleChange}>
+                <select name='textTransform' className='MenuInput' value={menu.textTransform} onChange={handleChange}>
                     <option>capitalize</option>
                     <option>uppercase</option>
                     <option>lowercase</option>
@@ -74,7 +78,7 @@ const Menu = ({handleChange,handleReset,menu}) => {
             </div>
             <div className='MenuRow2'>
                 <label htmlFor='borderStyle'>Style:</label>
-                <select name='borderStyle' value={menu.borderStyle} onChange={handleChange}>
+                <select name='borderStyle' className='MenuInput' value={menu.borderStyle} onChange={handleChange}>
                     <option>dotted</option>
                     <option>dashed</option>
                     <option>solid</option>
@@ -102,7 +106,7 @@ const Menu = ({handleChange,handleReset,menu}) => {
                 Spacing
             </div>
             <div className='MenuRow3'>
-                <label htmlFor='padding'>Radius:</label>
+                <label htmlFor='padding'>Padding:</label>
                 <input type="range" min="0" max="100" step="1" name='padding' id='padding' value={menu.padding} onChange={handleChange}/>
                 <span>{menu.padding}px</span>
             </div>
@@ -144,6 +148,7 @@ const Menu = ({handleChange,handleReset,menu}) => {
                 <label htmlFor='boxShadowColor'>Color:</label>
                 <span>{menu.boxShadowColor}</span>
                 <input type="color" name='boxShadowColor' id='boxShadowColor' value={menu.boxShadowColor} onChange={handleChange}/>
+            </div>
             </div>
         </div>
      );
