@@ -1,0 +1,31 @@
+.CodeBackground{
+    width: 100%;
+    height: 100%;
+
+}
+
+.CodeContainer{
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CodeCopy{
+    text-align: end;
+    padding: 5px;
+}
+
+.CodeTextContainer{
+    height: 100%;
+}
+
+.CodeText{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+}

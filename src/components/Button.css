@@ -1,0 +1,26 @@
+.ButtonBackground{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+}
+.ButtonBackground span{
+    font-size: 0.7rem;
+    width: 50%;
+    text-align: end;
+}
+
+.ButtonContainer{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+}
+
