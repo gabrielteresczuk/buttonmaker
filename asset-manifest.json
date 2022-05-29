@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/buttonmaker/static/css/main.0d9eb6a1.css",
+    "main.js": "/buttonmaker/static/js/main.28c67805.js",
+    "static/js/787.b5379d31.chunk.js": "/buttonmaker/static/js/787.b5379d31.chunk.js",
+    "index.html": "/buttonmaker/index.html",
+    "main.0d9eb6a1.css.map": "/buttonmaker/static/css/main.0d9eb6a1.css.map",
+    "main.28c67805.js.map": "/buttonmaker/static/js/main.28c67805.js.map",
+    "787.b5379d31.chunk.js.map": "/buttonmaker/static/js/787.b5379d31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d9eb6a1.css",
+    "static/js/main.28c67805.js"
+  ]
+}
